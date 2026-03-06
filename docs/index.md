@@ -2,9 +2,9 @@
 icon: lucide/rocket
 ---
 
-# Automate PoC for Sales Engineers (SE)
+# Automate PoC
 
-## 70% productivity gain in SE PoC process
+## 70% productivity gain in Sales Engineering PoC process
 
 <div class="grid" markdown>
 
@@ -18,6 +18,7 @@ graph TD
   from discovery notes
   <i></i>
   <i>⏱ 2 hrs</i>
+  <i>&nbsp;</i>
   <i>&nbsp;</i>
   <i>&nbsp;</i>
   <i>&nbsp;</i>
@@ -64,7 +65,7 @@ graph TD
 
 ``` mermaid
 ---
-title: After (with Agentic Coding Plugins)
+title: After (with Agentic SE SKILLS Plugins)
 ---
 graph TD
   A["<b>1. Formulate Success Criteria,</b>
@@ -73,7 +74,7 @@ graph TD
   <i></i>
   <i>⏱ 0.5 hrs</i>
   <i></i>  
-  <i>GenAI Web UI / Agentic Coding with SE's SKILLS Plugin</i>"]
+  <i>GenAI Web UI / Agentic Coding with Homerun MCP Server & SE's SKILLS Plugins</i>"]
   B["<b>2. Validate Unfamiliar Tech Stack</b>
   Sandbox env, config & instrumentation
   Revise scope to Datadog strengths
@@ -99,14 +100,14 @@ graph TD
   <i></i>
   <i>⏱ 3 hrs (3 issues x 1 hr)</i>
   <i></i>
-  <i>Agentic Coding with SE's SKILLS Plugin</i>"]
+  <i>Agentic Coding with SE's SKILLS Plugins</i>"]
   F["<b>6. Read-Out Playback</b>
   Prepare final deck with Datadog data
   <i></i>
   <i>⏱ 2 hrs</i>
   <i></i>
-  <i>Agentic Coding with Datadog MCP Server and SE's SKILLS Plugin</i>"]
-  G(["<b>Total: ~25.5 hrs (~77% reduction)</b>"])
+  <i>Agentic Coding with Datadog MCP Server and SE's SKILLS Plugins</i>"]
+  G(["<b>Total: ~25.5 hrs (~77% productivity improvement)</b>"])
   A --> B --> C --> D --> E --> F --> G
   style A fill:#c8e6c9,color:#1a1a1a
   style B fill:#c8e6c9,color:#1a1a1a
@@ -118,24 +119,80 @@ graph TD
 
 </div>
 
-## 100 seconds demo on step four
-WIP... A short video recording
+## 100 seconds demo on setup and AI assisted instrumentation
+<i>Coming soon...</i>
 
 ## 3 steps to get started
 
-=== "OpenCode"
+### Step 1: Access to LLM
+<i>skip this step if you have access to your company's LLM server</i>
+
+=== "Claude"
+
+    <i>Coming soon...</i>
+
+=== "Local LLM"
+
+    <i>Please request for feature.</i>
+
+### Step 2: Setup agentic coding tool
+<i>skip this step if you have an existing agentic coding tools (Codex, Gemini CLI, etc...)</i>
+
+=== "Claude Code (installation)"
+
+    [macOS / Linux](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code)
 
     ``` bash
-    pip install zensical
+    curl -fsSL https://claude.ai/install.sh | bash
     ```
+
+=== "OpenCode (no installation, portable)"
+
+    macOS / Linux:
+
+    ``` bash
+    curl -fLO https://raw.githubusercontent.com/jek-bao-choo/opencode-fork/refs/heads/dev/opencode-portable.sh
+    ```
+
+    ``` bash
+    chmod +x opencode-portable.sh
+    ```
+
+### Step 3: Add SKILLS plugins to agentic coding tool
 
 === "Claude Code"
 
     ``` bash
-    npm install zensical
+    # git ...
     ```
 
-## 5 minutes to try a demo
-WIP...
 
-## FAQ
+    ```bash
+    # claude --...
+    ```
+
+=== "OpenCode"
+
+    ``` bash
+    # git ...
+    ```
+
+
+    ```bash
+    # ./opencode ---...
+    ```
+
+=== "Codex"
+
+    <i>Please request for feature.</i>
+
+=== "Gemini CLI"
+
+    <i>Please request for feature.</i>
+
+=== "Cursor"
+
+    <i>Please request for feature.</i>
+
+## 5 minutes to try a demo
+<i>Coming soon... using stackblitz, codesandbox, or similar for you to try a demo.</i>
