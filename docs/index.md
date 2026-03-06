@@ -2,9 +2,9 @@
 icon: lucide/rocket
 ---
 
-# Automate PoC for Sales Engineers
+# Automate PoC for Sales Engineers (SE)
 
-## Current & Future States
+## 70% productivity gain in SE PoC process
 
 <div class="grid" markdown>
 
@@ -64,7 +64,7 @@ graph TD
 
 ``` mermaid
 ---
-title: After (with Agentic Codin Plugins)
+title: After (with Agentic Coding Plugins)
 ---
 graph TD
   A["<b>1. Formulate Success Criteria,</b>
@@ -108,17 +108,20 @@ graph TD
   <i>Agentic Coding with Datadog MCP Server and SE's SKILLS Plugin</i>"]
   G(["<b>Total: ~25.5 hrs (~77% reduction)</b>"])
   A --> B --> C --> D --> E --> F --> G
-  style A fill:#c8e6c9
-  style B fill:#c8e6c9
-  style D fill:#c8e6c9
-  style E fill:#c8e6c9
-  style F fill:#c8e6c9
-  style G fill:#a5d6a7
+  style A fill:#c8e6c9,color:#1a1a1a
+  style B fill:#c8e6c9,color:#1a1a1a
+  style D fill:#c8e6c9,color:#1a1a1a
+  style E fill:#c8e6c9,color:#1a1a1a
+  style F fill:#c8e6c9,color:#1a1a1a
+  style G fill:#a5d6a7,color:#1a1a1a
 ```
 
 </div>
 
-## Get started now in 3 steps
+## 100 seconds demo on step four
+WIP... A short video recording
+
+## 3 steps to get started
 
 === "OpenCode"
 
@@ -132,4 +135,7 @@ graph TD
     npm install zensical
     ```
 
-## *FAQ
+## 5 minutes to try a demo
+WIP...
+
+## FAQ
