@@ -1,3 +1,3 @@
 # Benchmark
 
-<i>Please request for benchmark.</i>
+<i>Please request a benchmark.</i>

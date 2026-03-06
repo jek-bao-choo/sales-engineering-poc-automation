@@ -119,13 +119,13 @@ graph TD
 
 </div>
 
-## 100 seconds demo on setup and AI assisted instrumentation
+## 100-second demo on setup and AI-assisted instrumentation
 <i>Coming soon...</i>
 
 ## 3 steps to get started
 
 ### Step 1: Access to LLM
-<i>skip this step if you have access to your company's LLM server</i>
+<i>Skip this step if you have access to your company's LLM server.</i>
 
 === "Claude"
 
@@ -133,10 +133,10 @@ graph TD
 
 === "Local LLM"
 
-    <i>Please request for feature.</i>
+    <i>Please request this feature.</i>
 
-### Step 2: Setup agentic coding tool
-<i>skip this step if you have an existing agentic coding tools (Codex, Gemini CLI, etc...)</i>
+### Step 2: Set up agentic coding tool
+<i>Skip this step if you have an existing agentic coding tool (Codex, Gemini CLI, etc.).</i>
 
 === "Claude Code (installation)"
 
@@ -158,7 +158,7 @@ graph TD
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add SKILLS plugins to agentic coding tool
+### Step 3: Add SKILLS plugins to your agentic coding tool
 
 === "Claude Code"
 
@@ -184,15 +184,15 @@ graph TD
 
 === "Codex"
 
-    <i>Please request for feature.</i>
+    <i>Please request this feature.</i>
 
 === "Gemini CLI"
 
-    <i>Please request for feature.</i>
+    <i>Please request this feature.</i>
 
 === "Cursor"
 
-    <i>Please request for feature.</i>
+    <i>Please request this feature.</i>
 
 ## 5 minutes to try a demo
 <i>Coming soon... using stackblitz, codesandbox, or similar for you to try a demo.</i>
