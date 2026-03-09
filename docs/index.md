@@ -21,14 +21,12 @@ graph TD
   <i>&nbsp;</i>
   <i>&nbsp;</i>
   <i>&nbsp;</i>
-  <i>&nbsp;</i>
   <i>&nbsp;</i>"]
   B["<b>2. Validate Unfamiliar Tech Stack</b>
   Sandbox env, config & instrumentation
   Revise scope to Datadog strengths
   <i></i>
   <i>⏱ 60 hrs (10 days x 6 hrs)</i>
-  <i>&nbsp;</i>
   <i>&nbsp;</i>
   <i>&nbsp;</i>"]
   C["<b>3. Prospect Discussion & Sign-Off</b>
@@ -65,7 +63,7 @@ graph TD
 
 ``` mermaid
 ---
-title: After (with Agentic SE SKILLS Plugins)
+title: After (with Agentic Plugins)
 ---
 graph TD
   A["<b>1. Formulate Success Criteria,</b>
@@ -74,14 +72,14 @@ graph TD
   <i></i>
   <i>⏱ 0.5 hrs</i>
   <i></i>  
-  <i>GenAI Web UI / Agentic Coding with Homerun MCP Server & SE's SKILLS Plugins</i>"]
+  <i>GenAI Web UI or Agentic Coding + Agentic Plugins</i>"]
   B["<b>2. Validate Unfamiliar Tech Stack</b>
   Sandbox env, config & instrumentation
   Revise scope to Datadog strengths
   <i></i>
   <i>⏱ 12 hrs (4 days x 3 hrs)</i>
   <i></i>
-  <i>Agentic Coding + SE's SKILLS Plugins</i>"]
+  <i>Agentic Coding + Agentic Plugins</i>"]
   C["<b>3. Prospect Discussion & Sign-Off</b>
   Discuss scope, revise & agree
   <i></i>
@@ -91,7 +89,7 @@ graph TD
   <i></i>
   <i>⏱ 6 hrs (2 wks x 3 sessions x 1 hr)</i>
   <i></i>  
-  <i>Agentic Coding + SE's SKILLS Plugins</i>
+  <i>Agentic Coding + Agentic Plugins</i>
   <i></i>
   <i>*FAQ: See below for prospect concerns</i>"]
   E["<b>5. Troubleshooting</b>
@@ -100,13 +98,13 @@ graph TD
   <i></i>
   <i>⏱ 3 hrs (3 issues x 1 hr)</i>
   <i></i>
-  <i>Agentic Coding with SE's SKILLS Plugins</i>"]
+  <i>Agentic Coding with Agentic Plugins</i>"]
   F["<b>6. Read-Out Playback</b>
   Prepare final deck with Datadog data
   <i></i>
   <i>⏱ 2 hrs</i>
   <i></i>
-  <i>Agentic Coding with Datadog MCP Server and SE's SKILLS Plugins</i>"]
+  <i>Agentic Coding with Datadog MCP Server and Agentic Plugins</i>"]
   G(["<b>Total: ~25.5 hrs (~77% productivity improvement)</b>"])
   A --> B --> C --> D --> E --> F --> G
   style A fill:#c8e6c9,color:#1a1a1a
@@ -129,11 +127,11 @@ graph TD
 
 === "Claude"
 
-    <i>Coming soon...</i>
+    <i>Your assigned Sales Engineer will [set this up for you](serf.md).</i>
 
 === "Local LLM"
 
-    <i>Please request this feature.</i>
+    <i>Coming soon.</i>
 
 ### Step 2: Set up agentic coding tool
 <i>Skip this step if you have an existing agentic coding tool (Codex, Gemini CLI, etc.).</i>
@@ -144,6 +142,12 @@ graph TD
 
     ``` bash
     curl -fsSL https://claude.ai/install.sh | bash
+    ```
+
+    Start Claude Code
+
+    ``` bash
+    claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YYY_PROVIDED_BY_YOUR_ASSIGNED_SALES ENGINEER_YYY","ANTHROPIC_AUTH_TOKEN":"YYY_PROVIDED_BY_YOUR ASSIGNED_SALES_ENGINEER_YYY"}}'
     ```
 
 === "OpenCode (no installation, portable)"
@@ -158,7 +162,7 @@ graph TD
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add SKILLS plugins to your agentic coding tool
+### Step 3: Add plugins to your agentic coding tool
 
 === "Claude Code"
 
@@ -182,17 +186,10 @@ graph TD
     # ./opencode ---...
     ```
 
-=== "Codex"
+=== "Others"
 
-    <i>Please request this feature.</i>
+    <i>Planning to add support for others such as Gemini CLI, Codex, etc.</i>
 
-=== "Gemini CLI"
-
-    <i>Please request this feature.</i>
-
-=== "Cursor"
-
-    <i>Please request this feature.</i>
 
 ## 5 minutes to try a demo
 <i>Coming soon... using stackblitz, codesandbox, or similar for you to try a demo.</i>
