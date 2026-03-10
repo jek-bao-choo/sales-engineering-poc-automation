@@ -191,5 +191,5 @@ graph TD
     <i>Planning to add support for others such as Gemini CLI, Codex, etc.</i>
 
 
-## 5 minutes to try a demo
-<i>Coming soon... using stackblitz, codesandbox, or similar for you to try a demo.</i>
+<!-- ## 5 minutes to try a demo
+<i>Coming soon... using stackblitz, codesandbox, or similar for you to try a demo.</i> -->
