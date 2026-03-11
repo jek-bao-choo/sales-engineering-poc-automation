@@ -4,8 +4,17 @@ icon: lucide/rocket
 
 # Automate PoC
 
-## 100-second demo on setup and AI-assisted instrumentation
-<i>Coming soon...</i>
+Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot PoCs in prospect environments faster and more accurately — so they can win more deals.
+
+
+[:material-frequently-asked-questions: Read the FAQ](faq.md){ .md-button }
+
+---
+
+## Demo
+<i>100-second video coming soon.</i>
+
+---
 
 ## Get started
 
