@@ -58,17 +58,26 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     chmod +x opencode-portable.sh
     ```
 
-<!-- ### Step 3: Add plugins to your agentic coding tool
+### Step 3: Add plugins to your agentic coding tool
 
 === "Claude Code"
 
+    Add [the marketplace](https://github.com/jek-bao-choo/datadog-agentic-plugins)
+
     ``` bash
-    # git ...
+    /plugin marketplace add https://github.com/jek-bao-choo/datadog-agentic-plugins
     ```
 
+    Install the plugins
+
+    ``` bash
+    /plugin install startup-toolkit@datadog-agentic-plugins
+    ```
+
+    Show the menu
 
     ```bash
-    # claude --...
+    /startup-toolkit:showing-menu
     ```
 
 === "OpenCode"
@@ -84,7 +93,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 
 === "Others"
 
-    <i>Planning to add support for others such as Gemini CLI, Codex, etc.</i> -->
+    <i>Planning to add support for others such as Gemini CLI, Codex, etc.</i>
 
 
 <!-- ## 5 minutes to try a demo
