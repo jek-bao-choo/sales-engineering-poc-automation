@@ -58,7 +58,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add plugins to your agentic coding tool
+### Step 3: Add agentic marketplace and plugins
 
 === "Claude Code"
 
