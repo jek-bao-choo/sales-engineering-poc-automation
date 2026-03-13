@@ -162,3 +162,14 @@ Usage follows the company usage policy, and Claude doesn't train on the data und
 Project DateNight tracks spending, enforces key expiration, and tags keys to sales opportunities - so prospects use the key for the PoC.
 
 </details>
+
+<details markdown>
+<summary><b>Why is there a need for a portable, no-installation version of the CLI tool?</b></summary>
+
+Some prospects operate under strict corporate IT policies that prevent installing new software on company machines. A portable, no-installation version of the CLI tool allows Sales Engineers to run the PoC directly without needing admin rights or IT approval — reducing friction during the evaluation.
+
+See also: [Claude Code without installation (Reddit)](https://www.reddit.com/r/ClaudeAI/comments/1rfjjfk/claude_code_without_installation/)
+
+![Claude Code without installation - Reddit post](images/claude-code-no-install-reddit.png)
+
+</details>
