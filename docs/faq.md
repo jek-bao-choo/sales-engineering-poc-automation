@@ -164,7 +164,7 @@ Project DateNight tracks spending, enforces key expiration, and tags keys to sal
 </details>
 
 <details markdown>
-<summary><b>Why is there a need for a portable, no-installation version of the CLI tool?</b></summary>
+<summary><b>Why is there a need for a portable version of the CLI tool?</b></summary>
 
 Some prospects operate under strict corporate IT policies that prevent installing new software on company machines. A portable, no-installation version of the CLI tool allows Sales Engineers to run the PoC directly without needing admin rights or IT approval — reducing friction during the evaluation.
 

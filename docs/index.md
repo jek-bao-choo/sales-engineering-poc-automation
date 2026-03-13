@@ -34,33 +34,41 @@ A process improvement using agentic CLI and plugins for easier, faster PoC setup
 
 === "Claude Code"
 
-    For a full install, see <a href="https://code.claude.com/" target="_blank">code.claude.com</a>. Otherwise, use the portable setup below.
+    **Download <a href="https://code.claude.com/" target="_blank">Claude Code</a>:**
 
     ``` bash
     curl -fsSL https://claude.ai/install.sh | bash
     ```
 
-    Start Claude Code
+    **Start Claude Code:** <i>(replace `YOUR_GATEWAY_BASE_URL` and `YOUR_API_KEY` **provided by your Sales Engineer**)</i>
 
+    Option 1 — settings flag (inline config)
     ``` bash
-    claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YYY_PROVIDED_BY_YOUR_ASSIGNED_SALES ENGINEER_YYY","ANTHROPIC_AUTH_TOKEN":"YYY_PROVIDED_BY_YOUR ASSIGNED_SALES_ENGINEER_YYY"}}'
+    ~/.local/bin/claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YOUR_GATEWAY_BASE_URL","ANTHROPIC_AUTH_TOKEN":"YOUR_API_KEY"}}'
     ```
+
+    Option 2 — environment variables (temporary, current session only)
+    ``` bash
+    ANTHROPIC_BASE_URL="YOUR_GATEWAY_BASE_URL" ANTHROPIC_AUTH_TOKEN="YOUR_API_KEY" ~/.local/bin/claude
+    ```
+
+
 
 === "OpenCode"
 
     For a full install, see <a href="https://opencode.ai/" target="_blank">opencode.ai</a>. Otherwise, use the portable setup below.
 
-    Download the portable OpenCode script:
+    **Download the portable OpenCode script:**
     ``` bash
     curl -fLO https://raw.githubusercontent.com/jek-bao-choo/opencode-fork/refs/heads/dev/opencode-portable.sh
     ```
 
-    Make it executable:
+    **Make it executable:**
     ``` bash
     chmod +x opencode-portable.sh
     ```
 
-    Create the config file <i>(replace `YOUR_GATEWAY_BASE_URL` with the URL provided by your Sales Engineer)</i>:
+    **Create the config file:** <i>(replace `YOUR_GATEWAY_BASE_URL` **provided by your Sales Engineer**)</i>
     ``` bash
     cat << 'EOF' > opencode-config.json
     {
