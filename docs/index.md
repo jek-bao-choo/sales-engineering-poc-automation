@@ -58,7 +58,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add agentic marketplace and plugins
+### Step 3: Add the marketplace and install the plugins
 
 === "Claude Code"
 
@@ -68,13 +68,19 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     /plugin marketplace add https://github.com/jek-bao-choo/datadog-agentic-plugins
     ```
 
-    Install the plugins
+    Install the plugin
 
     ``` bash
-    /plugin install startup-toolkit@datadog-agentic-plugins
+    /plugin install quickstart@datadog-agentic-plugins
     ```
 
-    Show the menu
+    Reload the plugins
+
+    ``` bash
+    /reload-plugins
+    ```
+
+    Display the menu
 
     ```bash
     /startup-toolkit:showing-menu
