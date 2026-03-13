@@ -4,7 +4,7 @@ icon: lucide/rocket
 
 # Automate PoC
 
-Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot PoCs in prospect environments faster and more accurately — so they can win more deals.
+A process improvement using agentic CLI and plugins for easier, faster PoC setup, configuration, and troubleshooting.
 
 
 [:material-frequently-asked-questions: Read the FAQ](faq.md){ .md-button }
@@ -19,46 +19,97 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 ## Get started
 
 ### Step 1: Access to LLM
-<i>Skip this step if you have access to your company's LLM server.</i>
+<i>Skip if you already have access to an LLM server.</i>
 
 === "Claude"
 
-    <i>Your assigned Sales Engineer will [set this up for you](serf.md).</i>
+    <i>[Set up by your Sales Engineer](serf.md).</i>
 
 === "Local LLM"
 
     <i>Coming soon.</i>
 
-### Step 2: Set up agentic coding tool
-<i>Skip this step if you have an existing agentic coding tool (Codex, Gemini CLI, etc.).</i>
+### Step 2: Set up agentic CLI (for macOS / Linux)
+<i>Skip if you already have an agentic coding tool (Codex, Gemini CLI, etc.).</i>
 
-=== "Claude Code (installation)"
+=== "Claude Code"
 
-    [macOS / Linux](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code)
+    **Download <a href="https://code.claude.com/" target="_blank">Claude Code</a>:**
 
     ``` bash
     curl -fsSL https://claude.ai/install.sh | bash
     ```
 
-    Start Claude Code
+    **Start Claude Code:** <i>(replace `YOUR_GATEWAY_BASE_URL` and `YOUR_API_KEY` **provided by your Sales Engineer**)</i>
 
+    Option 1 — settings flag (inline config)
     ``` bash
-    claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YYY_PROVIDED_BY_YOUR_ASSIGNED_SALES ENGINEER_YYY","ANTHROPIC_AUTH_TOKEN":"YYY_PROVIDED_BY_YOUR ASSIGNED_SALES_ENGINEER_YYY"}}'
+    ~/.local/bin/claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YOUR_GATEWAY_BASE_URL","ANTHROPIC_AUTH_TOKEN":"YOUR_API_KEY"}}'
     ```
 
-=== "OpenCode (no installation, portable)"
+    Option 2 — environment variables (temporary, current session only)
+    ``` bash
+    ANTHROPIC_BASE_URL="YOUR_GATEWAY_BASE_URL" ANTHROPIC_AUTH_TOKEN="YOUR_API_KEY" ~/.local/bin/claude
+    ```
 
-    macOS / Linux:
 
+
+=== "OpenCode"
+
+    For a full install, see <a href="https://opencode.ai/" target="_blank">opencode.ai</a>. Otherwise, use the portable setup below.
+
+    **Download the portable OpenCode script:**
     ``` bash
     curl -fLO https://raw.githubusercontent.com/jek-bao-choo/opencode-fork/refs/heads/dev/opencode-portable.sh
     ```
 
+    **Make it executable:**
     ``` bash
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add plugins to your agentic coding tool
+    **Create the config file:** <i>(replace `YOUR_GATEWAY_BASE_URL` **provided by your Sales Engineer**)</i>
+    ``` bash
+    cat << 'EOF' > opencode-config.json
+    {
+        "$schema": "https://opencode.ai/config.json",
+        "provider": {
+            "litellm": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "LiteLLM",
+            "options": {
+                "baseURL": "YOUR_GATEWAY_BASE_URL/v1"
+            },
+            "models": {
+                "claude-opus-4-6": {
+                "name": "Claude Opus 4.6"
+                },
+                "claude-sonnet-4-6": {
+                "name": "Claude Sonnet 4.6"
+                }
+            }
+            }
+        }
+    }
+    EOF
+    ```
+
+    Launch OpenCode:
+    ``` bash
+    OPENCODE_CONFIG="./opencode-config.json" ./opencode-portable.sh
+
+    # Once OpenCode opens, run:
+    #   /connect
+    #
+    # Search for and select:
+    #   LiteLLM
+    #
+    # Enter the API key provided by your assigned Sales Engineer
+    ```
+
+    
+
+### Step 3: Add the marketplace and plugins
 
 === "Claude Code"
 
@@ -68,28 +119,27 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     /plugin marketplace add https://github.com/jek-bao-choo/datadog-agentic-plugins
     ```
 
-    Install the plugins
+    Install the plugin
 
     ``` bash
-    /plugin install startup-toolkit@datadog-agentic-plugins
+    /plugin install quickstart@datadog-agentic-plugins
     ```
 
-    Show the menu
+    Reload the plugins
+
+    ``` bash
+    /reload-plugins
+    ```
+
+    Display the menu
 
     ```bash
-    /startup-toolkit:showing-menu
+    /quickstart:menu
     ```
 
 === "OpenCode"
 
-    ``` bash
-    # git ...
-    ```
-
-
-    ```bash
-    # ./opencode ---...
-    ```
+    <i>Coming soon.</i>
 
 === "Others"
 
