@@ -83,7 +83,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     Display the menu
 
     ```bash
-    /startup-toolkit:showing-menu
+    /quickstart:menu
     ```
 
 === "OpenCode"
