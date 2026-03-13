@@ -4,7 +4,7 @@ icon: lucide/rocket
 
 # Automate PoC
 
-Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot PoCs in prospect environments faster and more accurately — so they can win more deals.
+A process improvement using agentic CLI and plugins for easier, faster PoC setup, configuration, and troubleshooting.
 
 
 [:material-frequently-asked-questions: Read the FAQ](faq.md){ .md-button }
@@ -23,18 +23,18 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 
 === "Claude"
 
-    <i>[Requested by your Sales Engineer](serf.md).</i>
+    <i>[Set up by your Sales Engineer](serf.md).</i>
 
 === "Local LLM"
 
     <i>Coming soon.</i>
 
-### Step 2: Set up agentic coding tool
+### Step 2: Set up agentic CLI (for macOS / Linux)
 <i>Skip if you already have an agentic coding tool (Codex, Gemini CLI, etc.).</i>
 
-=== "Claude Code (installation)"
+=== "Claude Code"
 
-    [macOS / Linux](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code)
+    For a full install, see <a href="https://code.claude.com/" target="_blank">code.claude.com</a>. Otherwise, use the portable setup below.
 
     ``` bash
     curl -fsSL https://claude.ai/install.sh | bash
@@ -46,9 +46,9 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YYY_PROVIDED_BY_YOUR_ASSIGNED_SALES ENGINEER_YYY","ANTHROPIC_AUTH_TOKEN":"YYY_PROVIDED_BY_YOUR ASSIGNED_SALES_ENGINEER_YYY"}}'
     ```
 
-=== "OpenCode (macOS / Linux)"
+=== "OpenCode"
 
-    For a full install, see [opencode.ai](https://opencode.ai/). Otherwise, use the portable setup below.
+    For a full install, see <a href="https://opencode.ai/" target="_blank">opencode.ai</a>. Otherwise, use the portable setup below.
 
     Download the portable OpenCode script:
     ``` bash
@@ -60,7 +60,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     chmod +x opencode-portable.sh
     ```
 
-    Create the config file:
+    Create the config file <i>(replace `YOUR_GATEWAY_URL` with the URL provided by your Sales Engineer)</i>:
     ``` bash
     cat << 'EOF' > opencode-config.json
     {
@@ -70,7 +70,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
             "npm": "@ai-sdk/openai-compatible",
             "name": "LiteLLM",
             "options": {
-                "baseURL": "THE_SALES_ENGINEER_MUST_CHANGE_THIS_GATEWAY_URL/v1"
+                "baseURL": "YOUR_GATEWAY_URL/v1"
             },
             "models": {
                 "claude-opus-4-6": {

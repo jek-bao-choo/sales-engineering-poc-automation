@@ -3,7 +3,7 @@
 <details open markdown>
 <summary><b>What is Project DateNight?</b></summary>
 
-Project DateNight helps Sales Engineers run PoCs in prospect environments using the relevant agentic coding plugins.
+Project DateNight helps Sales Engineers run PoCs in prospect environments using agentic CLI and plugins for easier, faster PoC setup, configuration, and troubleshooting.
 
 </details>
 
