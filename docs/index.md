@@ -60,7 +60,7 @@ A process improvement using agentic CLI and plugins for easier, faster PoC setup
     chmod +x opencode-portable.sh
     ```
 
-    Create the config file <i>(replace `YOUR_GATEWAY_URL` with the URL provided by your Sales Engineer)</i>:
+    Create the config file <i>(replace `YOUR_GATEWAY_BASE_URL` with the URL provided by your Sales Engineer)</i>:
     ``` bash
     cat << 'EOF' > opencode-config.json
     {
@@ -70,7 +70,7 @@ A process improvement using agentic CLI and plugins for easier, faster PoC setup
             "npm": "@ai-sdk/openai-compatible",
             "name": "LiteLLM",
             "options": {
-                "baseURL": "YOUR_GATEWAY_URL/v1"
+                "baseURL": "YOUR_GATEWAY_BASE_URL/v1"
             },
             "models": {
                 "claude-opus-4-6": {

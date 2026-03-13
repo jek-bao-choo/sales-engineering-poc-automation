@@ -168,7 +168,7 @@ Project DateNight tracks spending, enforces key expiration, and tags keys to sal
 
 Some prospects operate under strict corporate IT policies that prevent installing new software on company machines. A portable, no-installation version of the CLI tool allows Sales Engineers to run the PoC directly without needing admin rights or IT approval — reducing friction during the evaluation.
 
-See also: [Claude Code without installation (Reddit)](https://www.reddit.com/r/ClaudeAI/comments/1rfjjfk/claude_code_without_installation/)
+See also: <a href="https://www.reddit.com/r/ClaudeAI/comments/1rfjjfk/claude_code_without_installation/" target="_blank" rel="noopener noreferrer">Claude Code without installation (Reddit)</a>
 
 ![Claude Code without installation - Reddit post](images/claude-code-no-install-reddit.png)
 
