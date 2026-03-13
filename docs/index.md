@@ -12,7 +12,18 @@ A process improvement using agentic CLI and plugins for easier, faster PoC setup
 ---
 
 ## Demo
-<i>100-second video coming soon.</i>
+
+*Viewable by organisation members only.*
+
+**Setup walkthroughs**
+
+- [Step 1 - 35s demo](https://drive.google.com/file/d/1YJ5KMXQnh95JYnE9R3POvuJ6y1guYNsC/view?usp=sharing){:target="_blank"}
+- [Step 2 - 129s demo](https://drive.google.com/file/d/1H61MhhmHFkeBm-OZiv3zUrLgiO1tRfWb/view?usp=sharing){:target="_blank"}
+- [Step 3 - 80s demo](https://drive.google.com/file/d/1l8fkX1jNgcNGVTnuCXiySIpNXHyVqkht/view?usp=sharing){:target="_blank"}
+
+**Real-world example**
+
+[Prospect troubleshooting missing APM traces with Project DateNight](https://drive.google.com/file/d/1PEEquQ_O8WagfdvbTUoJHrj6npOOZ3Xa/view?usp=sharing){:target="_blank"} (~12min) — see the [root cause and solution report](https://drive.google.com/file/d/1R6EVQzrXXtaQK5LeLQoNcwvx3m5Qhywi/view?usp=sharing){:target="_blank"} and [final outcome](https://drive.google.com/file/d/13R_uyxq8t09LDYQuDDeEjWo0AS2qfvd1/view?usp=sharing){:target="_blank"}. The Sales Engineer resolved the issue and got tracing working faster than expected, within an hour, without raising a support ticket.
 
 ---
 
