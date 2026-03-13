@@ -48,8 +48,9 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 
 === "OpenCode (no installation, portable)"
 
+    If you prefer to [install OpenCode](https://opencode.ai/) otherwise follow the step below for no installation, portable OpenCode.
+    
     macOS / Linux:
-
     ``` bash
     curl -fLO https://raw.githubusercontent.com/jek-bao-choo/opencode-fork/refs/heads/dev/opencode-portable.sh
     ```
@@ -58,7 +59,46 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     chmod +x opencode-portable.sh
     ```
 
-### Step 3: Add the marketplace and install the plugins
+    ``` bash
+    cat << 'EOF' > opencode-config.json
+    {
+        "$schema": "https://opencode.ai/config.json",
+        "provider": {
+            "litellm": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "LiteLLM",
+            "options": {
+                "baseURL": "THE_SALES_ENGINEER_MUST_CHANGE_THIS_GATEWAY_URL/v1"
+            },
+            "models": {
+                "claude-opus-4-6": {
+                "name": "Claude Opus 4.6"
+                },
+                "claude-sonnet-4-6": {
+                "name": "Claude Sonnet 4.6"
+                }
+            }
+            }
+        }
+    }
+    EOF
+    ```
+
+    ``` bash
+    OPENCODE_CONFIG="./opencode-config.json" ./opencode-portable.sh
+
+    # Then inside of OpenCode type in
+    # /connect
+    # 
+    # Next search for 
+    # LiteLLM
+    #
+    # Enter the key (The Sales Engineer will provide the key)
+    ```
+
+    
+
+### Step 3: Add the LLM key, marketplace, and plugin(s)
 
 === "Claude Code"
 
@@ -88,14 +128,7 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 
 === "OpenCode"
 
-    ``` bash
-    # git ...
-    ```
-
-
-    ```bash
-    # ./opencode ---...
-    ```
+    <i>Coming soon.</i>
 
 === "Others"
 
