@@ -34,7 +34,7 @@ A process improvement using agentic CLI and plugins for easier, faster PoC setup
 
 === "Claude Code"
 
-    **Download <a href="https://code.claude.com/" target="_blank">Claude Code</a>:**
+    **Download and install <a href="https://code.claude.com/" target="_blank">Claude Code</a>:**
 
     ``` bash
     curl -fsSL https://claude.ai/install.sh | bash
