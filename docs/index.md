@@ -19,18 +19,18 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
 ## Get started
 
 ### Step 1: Access to LLM
-<i>Skip this step if you have access to your company's LLM server.</i>
+<i>Skip if you already have access to an LLM server.</i>
 
 === "Claude"
 
-    <i>Your assigned Sales Engineer will [set this up for you](serf.md).</i>
+    <i>[Requested by your Sales Engineer](serf.md).</i>
 
 === "Local LLM"
 
     <i>Coming soon.</i>
 
 ### Step 2: Set up agentic coding tool
-<i>Skip this step if you have an existing agentic coding tool (Codex, Gemini CLI, etc.).</i>
+<i>Skip if you already have an agentic coding tool (Codex, Gemini CLI, etc.).</i>
 
 === "Claude Code (installation)"
 
@@ -46,19 +46,21 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     claude --settings '{"env":{"ANTHROPIC_BASE_URL":"YYY_PROVIDED_BY_YOUR_ASSIGNED_SALES ENGINEER_YYY","ANTHROPIC_AUTH_TOKEN":"YYY_PROVIDED_BY_YOUR ASSIGNED_SALES_ENGINEER_YYY"}}'
     ```
 
-=== "OpenCode (no installation, portable)"
+=== "OpenCode (macOS / Linux)"
 
-    If you prefer to [install OpenCode](https://opencode.ai/) otherwise follow the step below for no installation, portable OpenCode.
-    
-    macOS / Linux:
+    For a full install, see [opencode.ai](https://opencode.ai/). Otherwise, use the portable setup below.
+
+    Download the portable OpenCode script:
     ``` bash
     curl -fLO https://raw.githubusercontent.com/jek-bao-choo/opencode-fork/refs/heads/dev/opencode-portable.sh
     ```
 
+    Make it executable:
     ``` bash
     chmod +x opencode-portable.sh
     ```
 
+    Create the config file:
     ``` bash
     cat << 'EOF' > opencode-config.json
     {
@@ -84,21 +86,22 @@ Agentic Plugins that help Sales Engineers set up, configure, and troubleshoot Po
     EOF
     ```
 
+    Launch OpenCode:
     ``` bash
     OPENCODE_CONFIG="./opencode-config.json" ./opencode-portable.sh
 
-    # Then inside of OpenCode type in
-    # /connect
-    # 
-    # Next search for 
-    # LiteLLM
+    # Once OpenCode opens, run:
+    #   /connect
     #
-    # Enter the key (The Sales Engineer will provide the key)
+    # Search for and select:
+    #   LiteLLM
+    #
+    # Enter the API key provided by your assigned Sales Engineer
     ```
 
     
 
-### Step 3: Add the LLM key, marketplace, and plugin(s)
+### Step 3: Add the marketplace and plugins
 
 === "Claude Code"
 
